@@ -1,6 +1,6 @@
 left-pad
 ========
-Left pad a string with a character.
+Ruby gem to left pad a string with a character.
 
 ### Install
 
