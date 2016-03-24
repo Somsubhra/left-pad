@@ -10,14 +10,6 @@ class LeftPad
       raise InvalidCharError.new("Invalid character '#{character}'")
     end
 
-    length = length - string.length
-
-    if length > 0
-      length.times do
-        string = "#{character}#{string}"
-      end
-    end
-
-    string
+    string.rjust(length, character)
   end
 end
