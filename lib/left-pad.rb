@@ -1,7 +1,7 @@
 class InvalidCharError < StandardError; end
 
 class LeftPad
-  def LeftPad.leftpad(string, length, character=' ')
+  def self.leftpad(string, length, character=' ')
     string = string.to_s
     character = character.to_s
     length = length.to_i
